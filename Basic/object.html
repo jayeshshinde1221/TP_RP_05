@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <script>
+      // Object Creation
+      var annabelleMovie = {
+        title: "Annabelle",
+        rating: 2.4,
+        duration: 2,
+        durationType: "Hours",
+        casts: ["Khushi", "Ajit"],
+        genre: ["Horror", "Thriller", "Comedy"],
+        trending: false,
+      };
+
+      Object.freeze(annabelleMovie)
+
+      //Access Object
+      console.log("Casts", annabelleMovie.casts)
+      console.log("Genre", annabelleMovie.genre)
+      console.log("Rating", annabelleMovie['rating']);
+
+      // Manipulate Object
+      annabelleMovie.rating = 4;
+
+      console.log("Rating", annabelleMovie.rating);
+
+      // Delete
+
+      delete annabelleMovie.trending;
+
+      console.log(annabelleMovie)
+
+
+    //   price, rating, name, img, discount
+
+     var productDetail = {
+        name: "",
+        rating: 0,
+        price: 0,
+        img: "",
+        discount: 0
+      }
+
+    //   Array of Object
+      var products = [ productDetail,  ]
+    </script>
+  </body>
+</html>
