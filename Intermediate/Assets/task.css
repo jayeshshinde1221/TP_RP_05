@@ -237,74 +237,65 @@ body{
 /* front page end */
 
 /* form page */
+.main-div1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .main-div{
     display: flex;
-    width: 100%;
-    height: 100vh;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    margin: 83px;
+    padding: 16px;
+    background-color: var(--black);
+    border-radius: 10px;
+    height: 100px;
+    transform: scale(1.02);
+
+
     
 }
 
 .login-form{
     display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 500px;
-    align-items: center;
-    background-color: var(--black);
-    border-radius: 20px;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 60px;
+    
+    
    
 }
 
 .login-form:hover{
     transform: scale(1.02);
+
+    
+    
 }
 form h1{
-    text-align: center;
-    font-size: 3em;
-    margin: 60px 0px 60px;
+    font-family: 'Poppins',sans-serif;
+    
 }
 
-.user-info{
-    display: flex;
-    margin: 15px;
-}
 .input-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #00abf0;
+    font-family: 'Poppins',sans-serif;
     font-size: 20px;
-    margin: 8px 0px 0px;
+      
 }
 
 .user-input{
-    padding: 8px 10px;
-    width: 300px;
-    border-radius: 5px;
-    border: 0;
-    box-shadow: 0px 0px 1.5px black;
-    margin-left: 3px;
+    font-family: 'Poppins',sans-serif;
     font-size: 20px;
-    color: black;
-}
-
-.button{
-    padding: 15px 60px;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: #6495ED;
-    color: white;
-    border: 0;
     border-radius: 5px;
-    margin-top: 60px;
+    color: black;
+    
 }
 
-.button:hover{
-    border: 5px solid #6495ED;
-    border-radius: 10px;
-    color: black;
-    background-color: white;
-    box-shadow: 0px 0px 10px;
-    font-weight: 800;
-    font-size: 17px;
-    transform: scale(0.9);
-}
+
+
 /* form pagr end */
